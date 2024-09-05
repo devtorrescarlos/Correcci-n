@@ -2,10 +2,10 @@
 :root {
   --red: hsl(0, 66%, 54%);
   --green: hsl(148, 38%, 91%);
-  --greenDarker: hsl(169, 82%, 27%);
+  --green-darker: hsl(169, 82%, 27%);
   --white: hsl(0, 0%, 100%);
-  --lightGrey: hsl(186, 15%, 59%);
-  --darkerGrey: hsl(187, 24%, 22%);
+  --light-grey: hsl(186, 15%, 59%);
+  --darker-grey: hsl(187, 24%, 22%);
 }
 
 /** General **/
@@ -24,7 +24,7 @@ h1 {
 h2 {
   margin-left: 2rem;
   font-size: 2.8rem;
-  color: var(--darkerGrey);
+  color: var(--darker-grey);
 }
 h3 {
   font-size: 1.8rem;
@@ -35,7 +35,7 @@ body {
 }
 span {
   font-size: 1.5rem;
-  color: var(--greenDarker);
+  color: var(--green-darker);
 }
 fieldset {
   margin-top: 10rem;
@@ -67,7 +67,7 @@ legend {
   padding: 1.4rem;
   width: 100%;
   margin-top: 1rem;
-  border: solid 0.01rem var(--lightGrey);
+  border: solid 0.01rem var(--light-grey);
   border-radius: 0.5rem;
 }
 .campo:nth-child(3) {
