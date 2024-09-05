@@ -124,3 +124,13 @@ textarea {
 .checkbox{
   font-size: 1.3rem;
 }
+
+@media (max-width: 768px){
+  .contenedor{
+    grid-template-columns: 1fr;
+  }
+
+  textarea{
+    min-height: 200px;
+  }
+}
