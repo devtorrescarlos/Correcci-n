@@ -49,11 +49,9 @@
                 name="apellido"
               />
             </div>
-
+          </div>
             <div class="campo">
-              <label class="contenido" for="email"
-                >Email Address <span>*</span></label
-              >
+              <label class="contenido block" for="email">Email Address <span>*</span></label>
               <input
                 class="contenido__input"
                 type="email"
@@ -62,43 +60,37 @@
               />
             </div>
 
-            <div class="campo">
-              <label class="contenido" for="nombre"
-                >Query Type <span>*</span></label
-              >
-              <label class="contenido__input">
-                <input
-                class="contenido__radius"
-                  type="radio"
-                  id="enquiry"
-                  name="enquiry"
-                />
+            <label class="contenido block" for="">Query Type<span>*</span></label>
+            <div class="contenedor">
+              <label class="contenido__input contenido flex" for="general">
+                <input type="radio" name="ratio" id="general">
                 General Enquiry
               </label>
+              <label class="contenido__input contenido flex" for="support">
+                <input type="radio" name="ratio" id="support">
+                Support Request
+              </label>
+            </div>
+            
+            <label class="contenido block" for="">Message<span>*</span></label>
+            <textarea></textarea>
+            
+            <div class="contenido flex">
+              <input id="check" class="" type="checkbox" value="Submit">
+              <label class="checkbox" for="check">I consent to being contacted by the team</label>
             </div>
 
-            <div class="campo">
-              <label class="contenido" for="nombre"
-                >First Name <span>*</span></label
-              >
-              <input
-                class="contenido__input"
-                type="text"
-                id="nombre"
-                name="nombre"
-              />
-            </div>
-          </div>
+            <input class="contenido submit" type="submit" value="Submit">
         </fieldset>
       </form>
     </main>
 
-    <footer>
+    <!-- <footer class="footer">
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
         >. Coded by <a href="#">Your Name Here</a>.
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
