@@ -125,6 +125,62 @@ textarea {
   font-size: 1.3rem;
 }
 
+/* MESSAGE SEND EMAIL (CORRECT) */
+
+.message-send-email{
+  background-color: var(--darker-grey);
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  border-radius: 10px;
+  position: fixed;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ANIMATIONS */
+/* --------------------------------------------- */
+.message-send-email-animation-in{
+  animation: show-in 450ms ease;
+}
+
+.message-send-email-animation-out{
+  animation: show-out 2s forwards;
+}
+
+@keyframes show-in {
+  0% {
+    top: -20%;
+  }
+  100% {
+    top: 1%;
+  }
+}
+
+@keyframes show-out {
+  0%{
+    top: 1%;
+  }
+  
+  100%{
+    top: -20%;
+  }
+}
+/* --------------------------------------------- */
+
+.message-title-email{
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.message-text-email{
+  margin-top: 2px;
+  font-size: 1.3rem;
+  color: var(--green);
+}
+
 @media (max-width: 768px){
   .contenedor{
     grid-template-columns: 1fr;
