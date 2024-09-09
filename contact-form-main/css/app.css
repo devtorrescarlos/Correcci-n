@@ -58,6 +58,41 @@ input{
   font-size: 1.5rem;
 }
 
+/* Checkbox, Radio, Textarea, Inputs pseudoclasses hover, focus */
+/* ------------------------------------------------------------------------------------------- */
+input[type="radio"]:hover, input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
+  border: 1px solid var(--green-darker);
+}
+
+input[type="radio"]:focus, input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+  border: 1px solid var(--green-darker);
+  outline: none;
+}
+/* ------------------------------------------------------------------------------------------- */
+
+/* Styles Checkbox */
+input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"] + label.checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--green-darker);
+  color: var(--green-darker);
+  margin: 0 10px 0 2px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+input[type="checkbox"]:checked + label.checkbox::before{
+  background-image: url(../assets/images/icon-checkbox-check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 textarea {
   width: 100%;
   min-height: 100px; /* altura máxima */
